@@ -28,9 +28,9 @@ function Footer() {
   return (
     <FooterBar>
       <Wrapper>
-        <div className='copyright'>Copyright © 2022</div>
+        <div className='copyright'>Copyright © 2024</div>
         <div className='menu'>
-          <a href='https://github.com/kimminseoung'>
+          <a href='https://github.com/jjunnong'>
             <FaGithubSquare />
           </a>
         </div>

@@ -119,7 +119,7 @@ function Home() {
     <HomeCotainer>
       <Wrapper  variants={showHide} initial='start' animate='end'>
         <motion.h3 variants={showHideChild} className='name'>
-          Kim MinSeong
+          CHOI JUNYOUNG
         </motion.h3>
         <motion.span variants={showHideChild} className='line' />
         <Animation  variants={showHideChild}>

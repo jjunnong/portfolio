@@ -1,4 +1,3 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getDocs, getFirestore, collection, doc, setDoc } from "firebase/firestore";
 import { DocumentData } from "firebase/firestore/lite";
@@ -14,6 +13,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+console.log("Firebase Config:", firebaseConfig);
 export const db = getFirestore(app);
 
 // 게시판 데이터 저장하기
@@ -52,7 +52,7 @@ export const fetchProject = async (): Promise<DocumentData> => {
   return ProDB;
 };
 
-/* export const fetchBoard2 = async () => {
+export const fetchBoard2 = async () => {
   const citiesRef = collection(db, "Projects");
   await setDoc(doc(citiesRef, "1"), {
     id: "1",
@@ -119,4 +119,4 @@ export const fetchProject = async (): Promise<DocumentData> => {
   });
 };
 
-fetchBoard2();  */
+fetchBoard2();
